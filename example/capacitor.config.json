@@ -1,0 +1,6 @@
+{
+  "appId": "com.michaeldeguzman.semanticsearch.example",
+  "appName": "example",
+  "webDir": "www",
+  "loggingBehavior": "production"
+}

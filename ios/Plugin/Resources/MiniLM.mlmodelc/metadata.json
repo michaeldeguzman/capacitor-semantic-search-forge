@@ -1,0 +1,96 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "sentence-transformers\/all-MiniLM-L6-v2@1110a24, mean pooling + L2 norm, int8 weights, 128 tokens",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "embedding",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Int8",
+    "modelParameters" : [
+
+    ],
+    "author" : "sentence-transformers (Reimers & Gurevych); converted for capacitor-semantic-search",
+    "specificationVersion" : 4,
+    "license" : "Apache-2.0",
+    "computePrecision" : "Float16",
+    "stateSchema" : [
+
+    ],
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 128)",
+        "shortDescription" : "",
+        "shape" : "[1, 128]",
+        "name" : "ids",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 128)",
+        "shortDescription" : "",
+        "shape" : "[1, 128]",
+        "name" : "mask",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2026-10-26",
+      "com.github.apple.coremltools.source" : "torch==2.7.0",
+      "com.github.apple.coremltools.version" : "9.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "MiniLM",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Transpose" : 24,
+      "Multiply" : 6,
+      "InnerProduct" : 36,
+      "EmbeddingND" : 1,
+      "Add" : 21,
+      "Tile" : 2,
+      "MaxBroadcastable" : 1,
+      "WhereBroadcastable" : 1,
+      "BatchedMatmul" : 12,
+      "LoadConstantND" : 5,
+      "ExpandDims" : 4,
+      "Scale" : 13,
+      "ReshapeStatic" : 50,
+      "NotEqual" : 1,
+      "ReduceL2" : 1,
+      "SoftmaxND" : 6,
+      "Mvn" : 13,
+      "DivideBroadcastable" : 2,
+      "Clip" : 1,
+      "MultiplyBroadcastable" : 1,
+      "ReduceSum" : 2,
+      "Gelu" : 6,
+      "ActivationLinear" : 3
+    },
+    "method" : "predict"
+  }
+]
