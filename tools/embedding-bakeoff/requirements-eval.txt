@@ -1,0 +1,5 @@
+# Quality-only comparison (st_dump.py, evaluate.py). Versions used on 2026-10-26.
+sentence-transformers==6.2.0
+transformers==5.20.2
+torch==2.14.1
+numpy==2.5.4

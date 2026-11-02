@@ -1,0 +1,8 @@
+# Core ML conversion (coreml_convert.py, coreml_quality.py).
+# coremltools 9.0 is tested up to torch 2.7, and numpy 2.4+ breaks its
+# converters ("only 0-dimensional arrays can be converted to Python scalars").
+coremltools==9.0
+torch==2.7.0
+numpy<2.4
+transformers<4.50
+sentence-transformers<4

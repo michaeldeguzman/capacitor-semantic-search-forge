@@ -1,0 +1,7 @@
+venv*/
+data.json
+*_vectors.json
+results.json
+*.mlmodel
+*.mlpackage
+apple/apple
