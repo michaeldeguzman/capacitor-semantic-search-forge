@@ -7,6 +7,14 @@ engine should v1 use instead? Recorded on 2026-10-26, before the plugin
 switched engines. The plugin now ships all-MiniLM-L6-v2, as recommended
 below.
 
+## Outcome
+
+MiniLM shipped in capacitor-semantic-search 0.1.0. After it was added to
+the plugin, the same 10 queries ran in the example app on the iPhone 17
+Simulator (iOS 27.0): 6 right answer first and 7 in the top 3, the same
+as this report. "What it would take to run MiniLM in the plugin", below,
+was the plan at the time. Speed on an iPhone has not been measured.
+
 ## Recommendation
 
 Use **all-MiniLM-L6-v2, converted to Core ML with 8-bit weights**, in
