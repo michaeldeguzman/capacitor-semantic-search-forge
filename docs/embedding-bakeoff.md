@@ -148,6 +148,11 @@ or reword the bearing procedure, before recording the demo.
   has no sentence embeddings, so there is no iOS number yet.
 - Python times are PyTorch on the CPU and are not comparable to iOS. The
   Core ML figures below are the better guide.
+- A later check (macOS 27.0.1) confirmed the scoring code: the same
+  procedure text scored 1.000 against itself with NLEmbedding, and for
+  three queries (expected p01, p09 and p06, ranked 37th, 12th and 5th)
+  the cosine ranking of all 50 procedures matched Apple's own
+  `distance(between:and:)` ranking.
 
 ## Core ML check (MiniLM)
 
