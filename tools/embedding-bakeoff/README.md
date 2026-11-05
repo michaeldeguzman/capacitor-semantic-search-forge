@@ -3,6 +3,11 @@
 Reproduce `docs/embedding-bakeoff.md`. Run everything from this folder
 on a Mac (Apple Silicon, macOS 14+ for NLContextualEmbedding).
 
+Prerequisites: Xcode (or the Xcode command-line tools) for `swiftc`, Node
+for `export_data.js`, and Python 3 (tested with 3.13). The first run needs
+network access: the MiniLM and bge models download from Hugging Face, and
+NLContextualEmbedding downloads its assets if they are missing.
+
 ## 1. Test data
 
 ```bash
